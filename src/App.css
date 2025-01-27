@@ -1,0 +1,18 @@
+/* App.css */
+.app-container {
+  display: flex; /* Use Flexbox */
+  flex-direction: row; /* Ensure items are arranged horizontally (default) */
+  height: 100vh; /* Optional: Make the container take up full viewport height */
+}
+
+.editor-container {
+  flex: 1; /* Editor takes up half the horizontal space */
+  overflow-y: auto; /* Allow vertical scrolling for the editor */
+  padding: 20px; /* Add padding for readability */
+}
+
+.preview-container {
+  flex: 1; /* Preview takes up half the horizontal space */
+  overflow-y: auto; /* Allow vertical scrolling for the preview */
+  padding: 20px; /* Add padding for readability */
+}

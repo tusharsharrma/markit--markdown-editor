@@ -1,0 +1,150 @@
+/* Overall Container Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.header {
+  
+  height: 3vh;
+  border-radius: 10px;
+  margin-top: 0.1em;
+  text-shadow: #000000;
+  display: grid;
+  margin-top:0;
+  /* max-width: fit-content; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25em;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #89A8B2;
+  text-decoration:underline dashed;
+  z-index: 1;
+  
+  
+  /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); */
+}
+
+/* Overall Container Styling */
+.content-container {
+    display: flex;
+    height: 95vh; /* Full viewport height */
+    margin: 0.5em;
+    /* background-color: #f8f8ff; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  /* Editor Pane (Left) */
+  .editor-container {
+    flex: 1;
+    height: inherit;
+    background-color: #f0f4f8;
+    padding: 0px; /* Remove padding to take up full space */
+    border-right: 1px solid #d3e0dc;
+}
+
+/* Preview Pane (Right) */
+.preview-container {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.editor-container textarea {
+    width: 100%;
+    height: 98%; /* Make textarea fill the container */
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    font-family: inherit;
+    line-height: 1.6;
+    padding: 20px; /* Add padding to the textarea content */
+    overflow-y: auto;
+  }
+  
+  /* Markdown Output Styling */
+  .preview-container pre,
+  .preview-container code {
+    background-color: #f0f4f8;
+    /* border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px; */
+    color: #d14;
+    /* overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: inherit; */
+  }
+  
+  .preview-container p, h1, h2, h3, h4, a {
+      color: #5b4224;
+  }
+  
+  /* .preview-container h1 {
+    color: #22863a;
+  }
+  
+  .preview-container h2 {
+    color: #0366d6;
+  }
+  
+  .preview-container h3 {
+    color: #6f42c1;
+  }
+  
+  .preview-container a {
+    color: #0366d6;
+    text-decoration: underline;
+  } */
+  
+  .preview-container a:hover {
+    color: #d73a49;
+    text-decoration: none;
+  }
+  
+  .preview-container blockquote {
+    border-left: 4px solid #d3e0dc;
+    padding-left: 15px;
+    margin-left: 0;
+    font-style: italic;
+  }
+  
+  .preview-container hr {
+    border: none;
+    border-top: 1px solid #d3e0dc;
+  }
+  
+  .preview-container ul,
+  .preview-container ol {
+    padding-left: 20px;
+  }
+  
+  .preview-container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .preview-container th,
+  .preview-container td {
+    border: 1px solid #d3e0dc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .preview-container th {
+    background-color: #f0f4f8;
+  } 
