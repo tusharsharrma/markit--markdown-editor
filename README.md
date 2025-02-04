@@ -19,7 +19,6 @@ A blazing-fast ⚡ Markdown editor with live preview built using React and Remar
   - 🔗 Links & Images
   - 🗨️ Blockquotes
   - 📊 Tables
-- 🌈 **Syntax Highlighting** - Beautiful code rendering
 - 📱 **Responsive Design** - Works on all devices
 
 ## 🛠️ Installation
