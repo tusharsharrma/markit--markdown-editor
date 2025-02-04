@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const RawInputArea = ({ onInputChange }) => {
   const [rawText, setRawText] = useState(""); // State to track input
@@ -12,7 +12,6 @@ const RawInputArea = ({ onInputChange }) => {
   };
 
   return (
-    // <div style={{ flex: 1, padding: "10px" }}>
     <>
       <textarea
         name="Input"
