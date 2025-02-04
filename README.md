@@ -6,7 +6,7 @@
 
 A blazing-fast ⚡ Markdown editor with live preview built using React and Remarkable!
 
-![Project Screenshot](./screenshot.png) <!-- Add actual screenshot path -->
+ <!-- ![Project Screenshot](./screenshot.png) Add actual screenshot path -->
 
 ## ✨ Features
 
